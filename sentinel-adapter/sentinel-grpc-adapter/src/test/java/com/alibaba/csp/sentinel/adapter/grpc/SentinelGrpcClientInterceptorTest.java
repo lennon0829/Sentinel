@@ -15,6 +15,9 @@
  */
 package com.alibaba.csp.sentinel.adapter.grpc;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
 import java.io.IOException;
 import java.util.Collections;
 
@@ -30,9 +33,6 @@ import com.alibaba.csp.sentinel.slots.clusterbuilder.ClusterBuilderSlot;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 import io.grpc.StatusRuntimeException;
-import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Test cases for {@link SentinelGrpcClientInterceptor}.
